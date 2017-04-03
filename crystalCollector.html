@@ -1,0 +1,136 @@
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+
+  <!-- Bootstrap is used to make game look nicer -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+
+  <link href="crystalCSS.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<body>
+      <!-- Bootstrap container that will hold contents of site -->
+      <div class="container">
+      <div class="well jumbotron">
+        <div class="container">
+          <h1 class="text-center"> Crystal Collector! </h1>
+          
+          <p class ="text-center"> You will be given a random number at the start of the game </p>
+
+          <p class ="text-center">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+
+          <p class ="text-center">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. </p>
+
+          <p class ="text-center"> The value of each crystal is hidden from you until you click on it.</p>
+
+          <p class ="text-center"> Each time when the game starts, the game will change the values of each crystal.</p>
+      
+           <div class="text-center"><button class="btn btn-info btn-xs swag-button"><span class="glyphicon glyphicon-flash"></span> Swag!</button></div>
+      </div>
+      </div>
+  
+      <!-- Game sections to be held here -->
+      <div class="row">
+      <div class="col-md-6">
+
+      <!-- Panel that holds word to be guessed -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+
+        <h3 class="text-center panel-title"><strong>Score to match </strong><span class="glyphicon glyphicon-eye-open"></span</h3>
+        </div>
+      <div class="panel-body">
+      <div class="text-center"><h3 id="score-need"></h3></div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Panel that holds letters already guessed -->
+      <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="text-center panel-title"><strong>Your Score </strong><span class="glyphicon glyphicon-eye-close"></span</h3>
+        </div>
+        <div class="panel-body">
+        <h3 class="text-center" id="your-score"></h3>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        
+        
+        <!-- Panel that holds guesses left -->
+        <div class = "row">
+        <div class ="col-md-12">
+        
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="text-center panel-title"><strong>Pick a crystal </strong><span class="glyphicon glyphicon-heart-empty"></span></h3>
+        </div>
+        <div class="panel-body">
+        <h3 id="crystals"></h3>
+            <div class="text-center">
+        <img id="diamond" src = "diamond.png">
+        <img id="emerald" src = "emerald.png"> 
+        <img id="ruby" src = "ruby.png"> 
+        <img id="yellow" src = "purple.png">
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Panel that holds wins -->
+        <div class = "row">
+        <div class ="col-md-6">
+        
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="text-center panel-title"><strong>Wins </strong><span class="glyphicon glyphicon-chevron-up"></span></h3>
+        </div>
+        <div class="panel-body">
+        <h3 class="text-center" id="win-counter"></h3>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Panel that holds losses -->
+        <div class ="col-md-6">
+        
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="text-center panel-title"><strong>Losses </strong><span class="glyphicon glyphicon-chevron-down"></span></h3>
+        </div>
+        <div class="panel-body">
+        <h3 class="text-center" id="loss-counter"></h3>
+        </div>
+        </div>
+        </div>
+
+        
+
+
+          
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+  <script src="crystalCollector.js"></script>
+
+</body>
+
+</html>
